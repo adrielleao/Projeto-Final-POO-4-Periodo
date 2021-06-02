@@ -1,4 +1,5 @@
 import { getByLabelText } from "@testing-library/dom";
+import { Link } from "react-router-dom";
 
 const Form = () => {
     return (
@@ -82,22 +83,12 @@ const Form = () => {
                     </select>
                 </div>
             </div>
-            <div className="col-12">
-                <div className="form-check">
-                    <input className="form-check-input" type="checkbox" value="" id="invalidCheck" required />
-                    <label className="form-check-label" >
-                        Aceite os termos e condições
-      </label>
-                    <div className="invalid-feedback">
-                        You must agree before submitting.
-      </div>
 
-                </div>
-            </div>
 
-            <div className="col-12">
-                <button className="btn btn-primary" type="submit">Enviar Formulario</button>
-            </div>
+            <Link className="btn btn-primary btn-lg" to="/dashboard">
+                Enviar Formulario
+            </Link>
+
 
         </form>
 
